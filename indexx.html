@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yasna81 — Projects & CV</title>
+  <<meta name="google-site-verification" content="Qv5V7vCZnmq7f6KctwElprlDUrkhRWMPVf61k6YWyG8" />
+  <link rel="canonical" href="https://Yasna81.github.io/" />
+  <!-- Google Search Console (paste your token as content) -->
+  <!-- <meta name="google-site-verification" content="PASTE_TOKEN_HERE" /> -->
+
+  <style>
+    :root{--max:980px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;padding:0;color:#0b1220}
+    .wrap{max-width:var(--max);margin:2rem auto;padding:1rem}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{margin-left:1rem;text-decoration:none;color:inherit}
+    .hero{padding:2rem 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{border:1px solid #e6e9ef;padding:1rem;border-radius:8px}
+    footer{margin-top:3rem;padding:1rem 0;border-top:1px solid #eee;color:#555}
+    img.profile{width:120px;border-radius:8px}
+    @media (max-width:520px){header{flex-direction:column;align-items:flex-start} nav a{margin-left:0;margin-top:.5rem}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1 style="margin:.15rem 0">Yasna81</h1>
+        <div style="color:#666">Computational biologist • Transcriptomics & ML</div>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div style="display:flex;gap:1rem;align-items:center">
+        <img src="/assets/img/profile.jpg" alt="Yasna profile" class="profile" onerror="this.style.display='none'">
+        <div>
+          <h2 style="margin:.25rem 0">Hi — I’m Yasna.</h2>
+          <p style="margin:.25rem 0;color:#444">I work on transcriptomics, machine learning for clinical data, and visualization. Explore my projects below.</p>
+          <p style="margin:.25rem 0"><a href="/assets/resume.pdf" target="_blank">Download résumé (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Highlighted projects</h3>
+      <div class="cards">
+        <article class="card">
+          <h4> NO SHIP1 NO CHill  </h4>
+          <p> GSEA + RNA-seq analysis— quick summary, link to repo.</p>
+          <p><a href="https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline" target="_blank">Repo →</a></p>
+        </article>
+        <article class="card">
+          <h4>Brain expression explorer</h4>
+          <p>Shiny app to explore brain region expression (brain_map).</p>
+          <p><a href="https://github.com/Yasna81/Brain_map" target="_blank">Repo →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <small>&copy; <span id="year"></span> Yasna81 — <a href="/about.html">About</a></small>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
